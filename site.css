@@ -1,0 +1,18 @@
+.soda-can {
+  width:100%;
+  display:block;
+  float:left;
+}
+
+.cell {
+  padding:10px;
+}
+
+.cell:hover {
+  border: 1px solid black;
+  cursor:pointer;
+}
+
+.coin-img {
+  width:25%;
+}

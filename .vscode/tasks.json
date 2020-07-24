@@ -1,0 +1,25 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Remove previous JS build",
+      "type": "shell",
+      "command": "rm -r js/*",
+      "group": "build"
+    },
+    {
+      "label": "Test",
+      "type": "shell",
+      "command": "tsc",
+      "showOutput": "always",
+      "args": ["-p", "ts", "--module", "system"],
+      "group":{
+        "kind": "build",
+        "isDefault": true
+      },
+      "dependsOn": "Remove previous JS build"
+    }
+  ]
+}

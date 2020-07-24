@@ -1,0 +1,7 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "outFile": "../js/app.js", // This will force ALL .ts files compiled into a single app.js file
+    "sourceMap": true
+  }
+}

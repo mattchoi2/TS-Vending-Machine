@@ -1,0 +1,1 @@
+if (!this.IgnoreOONZeroBalance || (this.IgnoreOONZeroBalance && ACCUM_ADJ_TYPE == '1' && ACCUM_COMBINED_BALANCE != '+00000000.00' ))
